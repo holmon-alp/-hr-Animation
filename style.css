@@ -1,0 +1,76 @@
+.box {
+  position: relative;
+  width: 12rem;
+  height: 12rem;
+  padding-top: 3rem;
+  padding-left: 2rem;
+  margin-left: 25rem;
+  border: 2px double black;
+  border-radius: 10rem;
+  background-color: rgb(151, 247, 247);
+  animation: box 5s infinite;
+}
+@keyframes box {
+  0% {
+    transform-style: inherit;
+  }
+  100% {
+    transform: rotateX(360deg);
+  }
+}
+
+#hr1,
+#hr2,
+#hr3,
+#hr4 {
+  width: 10rem;
+  height: 2rem;
+  border-radius: 50%;
+  position: absolute;
+}
+#hr1 {
+  border: 3px solid yellow;
+  margin-top: 3rem;
+  animation: hr 3s linear infinite;
+}
+
+#hr2 {
+  border: 3px solid red;
+  margin-top: 3.3rem;
+  animation: hr 3.01s linear infinite;
+}
+
+#hr3 {
+  border: 3px solid blue;
+  margin-top: 3.6rem;
+  animation: hr 3.03s linear infinite;
+}
+
+#hr4 {
+  border: 3px solid green;
+  margin-top: 3.9rem;
+  animation: hr 3.05s linear infinite;
+}
+
+@keyframes hr {
+  0% {
+    transform-style: inherit;
+    transform: rotateX(200deg);
+  }
+  25% {
+    transform: rotate(360deg);
+    height: 2rem;
+  }
+  50% {
+    transform-style: initial;
+    transform: rotateZ(120deg);
+  }
+  80% {
+    transform: rotateY(360deg);
+    height: 3rem;
+  }
+  100% {
+    transform: rotateX(200deg);
+    height: 2rem;
+  }
+}
